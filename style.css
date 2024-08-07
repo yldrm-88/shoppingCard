@@ -1,0 +1,119 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 400px 10px 400px;
+}
+
+.header i{
+    cursor: pointer;
+}
+
+.header i:hover{
+    color: #536f1b;
+}
+
+.cart-icon-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#cart-count{
+    position: absolute;
+    bottom: 15px;
+    right: -10px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.products-col{
+    width: 80%;
+    margin: 80px auto 20px auto;
+    height: auto;
+    background-color:#cad7af;
+    margin-top: 50px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.box{
+    width: 300px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.091);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.box img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.box p{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #5a8a5c;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-button:hover {
+    background-color: #466944;
+}
+
+.quantity-input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.quantity-input:focus {
+    border-color: #5a8a5c;
+}
+
+#success-alert{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display:none;
+}
